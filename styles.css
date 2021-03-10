@@ -277,3 +277,103 @@ main {
     font-family:"Inter", sans-serif;
     border-radius: 10px;
 }
+
+.main-product-detail {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px;
+    background-color: var(--warm-black);
+}
+
+.main-product-detail .product-detail--batata-logo {
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    background-image: url(./assets/icons/bitbat-small.svg);
+    top: -10px;
+    left: calc(50% - 20px);
+}
+
+.main-product-detail .product-detail-tittle {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 50px auto 0;
+    text-align: center;
+}
+
+.product-detail-tittle h2 {
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    color: var(--just-white);
+    font-weight: bold;
+    line-height: 2.6rem;
+}
+
+.product-detail-tittle p {
+    margin-bottom: 20px;
+    color: #808080;
+    font-size: 1.4rem;
+    font-weight: 500; 
+}
+
+.product-cards--container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-detail-card {
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 150px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: var(--black);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.16);
+}
+
+.product-detail-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.clock {
+    background-image: url(./assets/icons/clock.svg);
+}
+
+.eye {
+    background-image: url(./assets/icons/eye.svg);
+}
+
+.dollar {
+    background-image:url(./assets/icons/dollar-sign.svg);
+}
+
+.check {
+    background-image:url(./assets/icons/check-circle.svg);
+}
+
+.product--card-tittle {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+
+.product--card-body {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+
