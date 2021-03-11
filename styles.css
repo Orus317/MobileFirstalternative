@@ -440,6 +440,13 @@ main {
     box-shadow: 0 4px 8px rgba(89,73,30,0.16);
 }
 
+.plans-container--card:last-child {
+    margin-bottom: 20px;
+}
+
+.plans-container--card:nth-child(3) {
+    background-color: var(--black);
+}
 .recommended {
     position: absolute;
     background-color: var(--bitcoin-orange);
@@ -452,6 +459,14 @@ main {
     border-radius: 8px;
     right: calc(50% - 60px);
     top:-15px;
+}
+
+.plans-container--card:nth-child(2) .recommended {
+    background-color: var(--secondary-blue);
+}
+
+.plans-container--card:nth-child(3) .recommended {
+    background-color: #E73B09;
 }
 
 .plan-card--tittle {
@@ -476,5 +491,69 @@ main {
     vertical-align: text-top;
 }
 
+.plans-container--card:nth-child(3) .plan-card--tittle{
+    color: var(--off-white);
+}
 
+.plans-container--card:nth-child(3) .plan-card--price {
+    color: var(--off-white);
+}
 
+.plan-card--saving {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: #757575;
+    margin-top: 16px;
+}
+
+.plans-container--card:nth-child(3) .plan-card--saving {
+    color: #969392;
+}
+
+.plan-card--ca {
+    width: 150px;
+    height: 48px;
+    margin-top: 16px;
+    background-color: var(--off-white);
+    border: 2px solid var(--bitcoin-orange);
+    outline: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+    font-family: "DM Sans", sans-serif;
+}
+
+.plans-container--card:nth-child(2) .plan-card--ca {
+    border: 2px solid var(--secondary-blue);
+}
+
+.plans-container--card:nth-child(3) .plan-card--ca {
+    border: 2px solid #E73B09;
+    color: var(--off-white);
+    background-color: var(--warm-black);
+}
+
+.plan-card--ca span {
+    background-image: url(./assets/icons/arrow-right.svg);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: text-bottom;
+    margin-left: 8px;
+}
+
+.plans-container--card:nth-child(2) .plan-card--ca span {
+    background-image: url(./assets/icons/arrow-right-blue-2.png);
+    background-size: cover;
+}
+
+.plans-container--card:nth-child(3) .plan-card--ca span {
+    filter: saturate(670%);
+}
+
+.plans-container--slider {
+    display: flex;
+    flex-wrap: wrap;
+}
