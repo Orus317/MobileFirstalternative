@@ -177,7 +177,7 @@ main {
     font-weight: bold;
     line-height: 2.3rem;
     color: var(--bitcoin-orange);
-    text-align: left;
+    /* text-align: left; */
     padding-left: 25px;
 }
 
@@ -267,7 +267,7 @@ main {
     font-weight: bold;
     line-height: 2.3rem;
     color: var(--secondary-blue);
-    text-align: left;
+    /* text-align: left; */
     padding-left: 25px;
 }
 
@@ -556,10 +556,10 @@ main {
 
 .plans-container--slider {
     display: flex;
-    height: 316px;
+    height: 340px;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
-    scroll-snap-type: proximity;
+    scroll-snap-type: x proximity;
 }
 
 footer {
@@ -590,3 +590,4 @@ footer .left ul {
     color: var(--just-white);
     text-decoration: none;
 }
+
